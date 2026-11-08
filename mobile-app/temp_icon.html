@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background: white; }
+        svg { width: 1024px; height: 1024px; }
+    </style>
+</head>
+<body>
+<svg width="1024" height="1024" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background App Icon Shape (Squircle) - WE REMOVE THIS FOR THE PNG SO IT CAN BE ADAPTIVE -->
+  <!-- <rect width="512" height="512" rx="115" fill="#ffffff" /> -->
+  
+  <defs>
+    <linearGradient id="stemGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1E3A8A"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="15" flood-color="#1E3A8A" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <!-- BIG CAPSULE (Dot of the Snake 'j') -->
+    <g transform="translate(268, 95) rotate(35)">
+      <!-- Top Half (Blue) -->
+      <path d="M -24 -24 A 24 24 0 0 1 24 -24 L 24 -2 L -24 -2 Z" fill="#1E3A8A"/>
+      <!-- Bottom Half (Green) -->
+      <path d="M -24 2 L 24 2 L 24 24 A 24 24 0 0 1 -24 24 Z" fill="#10B981"/>
+    </g>
+
+    <!-- Stem of the 'j' + Snake Curve -->
+    <path d="M 240 190
+             A 28 28 0 0 1 296 190
+             V 310
+             A 80 80 0 0 1 136 310
+             A 28 28 0 0 1 192 310
+             A 24 24 0 0 0 240 310
+             Z" 
+          fill="url(#stemGrad)" />
+          
+    <!-- Subtle Snake Eye -->
+    <circle cx="164" cy="298" r="4.5" fill="#ffffff" />
+    
+    <!-- Subtle Snake Tongue -->
+    <path d="M 164 282 L 164 265 M 164 265 L 157 257 M 164 265 L 171 257" 
+          stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  </g>
+</svg>
+</body>
+</html>

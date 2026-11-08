@@ -1,0 +1,28 @@
+<svg width="200" height="150" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+  <!-- التدرج اللوني -->
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00bfff"/>
+      <stop offset="100%" stop-color="#0056b3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- النقاط الصغيرة (تمثيل الحركة) -->
+  <circle cx="70" cy="60" r="3" fill="#00bfff"/>
+  <circle cx="75" cy="55" r="3" fill="#00bfff"/>
+  <circle cx="80" cy="50" r="3" fill="#00bfff"/>
+
+  <!-- الخط العلوي (السهم لأعلى) -->
+  <path d="M80 45 C90 50, 100 55, 110 60 C115 65, 120 70, 125 75 L130 75 L125 80 C120 85, 115 90, 110 95 C100 100, 90 105, 80 110" 
+        fill="none" stroke="url(#grad)" stroke-width="6" />
+
+  <!-- الخط السفلي (السهم لأسفل) -->
+  <path d="M80 110 C90 105, 100 100, 110 95 C115 90, 120 85, 125 80 L130 80 L125 75 C120 70, 115 65, 110 60 C100 55, 90 50, 80 45" 
+        fill="none" stroke="url(#grad)" stroke-width="6" />
+
+  <!-- السهم العلوي -->
+  <polygon points="125,75 130,75 127.5,80" fill="url(#grad)" />
+
+  <!-- السهم السفلي -->
+  <polygon points="125,80 130,80 127.5,75" fill="url(#grad)" />
+</svg>
